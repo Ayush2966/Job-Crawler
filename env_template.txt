@@ -1,0 +1,52 @@
+# Job Crawler Environment Configuration
+# Copy this file to .env and fill in your values
+
+# Email Configuration
+EMAIL_SENDER=your-email@example.com
+EMAIL_RECIPIENT=your-email@example.com
+
+# SendGrid Configuration (Recommended - more reliable than Gmail)
+SENDGRID_API_KEY=your-sendgrid-api-key-here
+
+# Gmail Configuration (Fallback)
+EMAIL_PASSWORD=your-gmail-app-password
+
+# Multi-Channel Notifications
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK
+DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR/DISCORD/WEBHOOK
+TELEGRAM_BOT_TOKEN=your-telegram-bot-token
+TELEGRAM_CHAT_ID=your-telegram-chat-id
+
+# Proxy Configuration (Optional)
+USE_PROXY_ROTATION=false
+PROXY_LIST=proxy1:port,proxy2:port
+
+# Selenium Configuration
+SELENIUM_HEADLESS=true
+SELENIUM_TIMEOUT=30
+
+# Job Filtering Preferences
+MIN_SALARY=5
+MAX_SALARY=50
+PREFERRED_LOCATIONS=Bangalore,Mumbai,Delhi,Hyderabad,Chennai,Pune
+BLACKLISTED_COMPANIES=
+
+# Scheduling and Automation
+ENABLE_SCHEDULING=false
+DEFAULT_NOTIFICATION_FREQUENCY=daily
+
+# Advanced Features
+ENABLE_USER_PROFILES=true
+ENABLE_JOB_SCORING=true
+ENABLE_MULTI_CHANNEL=true
+
+# Instructions:
+# 1. For SendGrid: Sign up at sendgrid.com, create an API key
+# 2. For Gmail: Enable 2FA, generate app password
+# 3. For Slack: Create webhook at api.slack.com/messaging/webhooks
+# 4. For Discord: Create webhook in your Discord server settings
+# 5. For Telegram: Create bot with @BotFather, get token and chat ID
+# 6. Adjust salary range in LPA (Lakhs Per Annum)
+# 7. Add preferred cities (comma-separated)
+# 8. Add companies to blacklist (comma-separated)
+# 9. Set ENABLE_SCHEDULING=true for automated runs
